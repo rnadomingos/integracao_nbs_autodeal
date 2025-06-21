@@ -1,0 +1,146 @@
+import json
+teste = {
+    "CompanyId": 98,
+    "ProcessId": 56,
+    "ObjectIdParent": "null",
+    "Metadatas": [
+        {
+            "MetadataKeyId": 430,
+            "MetadataValue": 80001,
+            "MetadataOrder": "null"
+        },
+        {
+            "MetadataKeyId": 532,
+            "MetadataValue": 70001,
+            "MetadataOrder": 1
+        },
+        {
+            "MetadataKeyId": 532,
+            "MetadataValue": 70002,
+            "MetadataOrder": 2
+        },
+        {
+            "MetadataKeyId": 431,
+            "MetadataValue": "31/03/2023 09:16",
+            "MetadataOrder": "null"
+        },
+        {
+            "MetadataKeyId": 432,
+            "MetadataValue": "GPBB - BMW ALPHAVILLE",
+            "MetadataOrder": "null"
+        },
+        {
+            "MetadataKeyId": 433,
+            "MetadataValue": "M5 M5-RECALL MOTOS",
+            "MetadataOrder": "null"
+        },
+        {
+            "MetadataKeyId": 434,
+            "MetadataValue": "DOMENICO MARCELO GUERREIRO",
+            "MetadataOrder": "null"
+        },
+        {
+            "MetadataKeyId": 435,
+            "MetadataValue": "99Z0M0002NZ903707",
+            "MetadataOrder": "null"
+        },
+        {
+            "MetadataKeyId": 436,
+            "MetadataValue": "BMW MOTO R / R 1250 GS MU",
+            "MetadataOrder": "null"
+        },
+        {
+            "MetadataKeyId": 437,
+            "MetadataValue": "21/22",
+            "MetadataOrder": "null"
+        },
+        {
+            "MetadataKeyId": 494,
+            "MetadataValue": 2000,
+            "MetadataOrder": "null"
+        },        
+        {
+            "MetadataKeyId": 438,
+            "MetadataValue": "CBB 2F14",
+            "MetadataOrder": "null"
+        },        
+        {
+            "MetadataKeyId": 439,
+            "MetadataValue": "01/02/2022",
+            "MetadataOrder": "null"
+        },        
+        {
+            "MetadataKeyId": 440,
+            "MetadataValue": "COMPANY TEST",
+            "MetadataOrder": "null"
+        },        
+        {
+            "MetadataKeyId": 441,
+            "MetadataValue": "12030750000195",
+            "MetadataOrder": "null"
+        },
+        {
+            "MetadataKeyId": 442,
+            "MetadataValue": "(11) 9769-9808",
+            "MetadataOrder": "null"
+        },
+        {
+            "MetadataKeyId": 443,
+            "MetadataValue": "(11) 9 7699-9808",
+            "MetadataOrder": "null"
+        },
+        {
+            "MetadataKeyId": 444,
+            "MetadataValue": "Campanha automática: 0000232600, Ação Técnica Programação com função de proteção da transmissão",
+            "MetadataOrder": 1
+        },
+        {
+            "MetadataKeyId": 456,
+            "MetadataValue": "0060712",
+            "MetadataOrder": 1
+        },
+        {
+            "MetadataKeyId": 549,
+            "MetadataValue": "90023",
+            "MetadataOrder": 1
+        },
+        {
+            "MetadataKeyId": 445,
+            "MetadataValue": "Atualizar a versão do software",
+            "MetadataOrder": 1
+        },
+        {
+            "MetadataKeyId": 446,
+            "MetadataValue": "79.08",
+            "MetadataOrder": 1
+        },
+        {
+            "MetadataKeyId": 458,
+            "MetadataValue": "10000",
+            "MetadataOrder": 1
+        },
+        {
+            "MetadataKeyId": 534,
+            "MetadataValue": "09786",
+            "MetadataOrder": 1
+        },
+        {
+            "MetadataKeyId": 447,
+            "MetadataValue": "CHIP XYZ",
+            "MetadataOrder": 1
+        },
+        {
+            "MetadataKeyId": 448,
+            "MetadataValue": "20.00",
+            "MetadataOrder": 1
+        },
+        {
+            "MetadataKeyId": 449,
+            "MetadataValue": "99.08",
+            "MetadataOrder": "null"
+        }
+    ],
+    "Comments": [],
+    "Files": [ ],
+    "ActionValue": "REGISTRAR"
+}
