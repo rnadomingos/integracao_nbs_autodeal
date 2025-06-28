@@ -1,11 +1,15 @@
+from dotenv import load_dotenv
 import requests as req
 import json
+import os
+
+load_dotenv()
 
 # LOGON PARAMS
-URL_API = 'https://hmlsvc.organizaprime.com.br'
-USERLOGIN = 'tiveo.service'
-USERPASSWORD = 'r7?P2c#E'
-GRANT_TYPE = 'password'
+URL_API = os.getenv("URL_API")
+USERLOGIN = os.getenv("USERLOGIN")
+USERPASSWORD = os.getenv("USERPASSWORD")
+GRANT_TYPE = os.getenv("GRANT_TYPE")
 
 # JSON LOAD TO SEND TEST
 with open('dados.json', 'r', encoding='utf-8') as f:
