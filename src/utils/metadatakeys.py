@@ -6,6 +6,9 @@ class MetadatakeyCompany(Enum):
     gpbc = 4
     tiveo = 98
 
+class MetadatakeyProcess(Enum):
+    garantia = 56    
+
 class MetadatakeyOSCover(Enum):
     numero_os = 430
     data_emissao = 431
@@ -18,6 +21,12 @@ class MetadatakeyOSCover(Enum):
     km = 494
     placa = 438
     data_da_venda = 439
+    valor_estimado_os = 449
+
+class MetadatakeyOSRelated(Enum):
+    cod_empresa =  MetadatakeyCompany.tiveo.value
+    numero_os = MetadatakeyOSCover.numero_os.value
+    numero_os_relacionada = 532
 
 class MetadatakeyOSClient(Enum):
     cod_empresa = MetadatakeyOSCover.numero_os.value
