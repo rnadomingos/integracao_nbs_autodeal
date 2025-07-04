@@ -1,9 +1,12 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import declarative_base, sessionmaker
+from load_settings import load_settings
 
-MYSQL_DATABASE_DEV_URL = "mysql+pymysql://autodeal_user:pR8cHu#0USen@192.168.18.240:3306/dev_autodeal"
+settings = load_settings()
 
-engine = create_engine(MYSQL_DATABASE_DEV_URL, echo=True)
+connection_string = f"mysql+pymysql://{settings['db_user']}:{settings['db_pass']}@{settings['db_host']}:{settings['db_port']}/{settings['db_name']}"
+
+engine = create_engine(connection_string, echo=True)
 
 SessionLocal = sessionmaker(autoflush=False, autocommit=False, bind=engine)
 
