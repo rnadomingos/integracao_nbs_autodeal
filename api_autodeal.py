@@ -2,6 +2,7 @@ from dotenv import load_dotenv
 import requests as req
 import json
 import os
+from dados import teste
 
 load_dotenv()
 
@@ -12,11 +13,13 @@ USERPASSWORD = os.getenv("USERPASSWORD")
 GRANT_TYPE = os.getenv("GRANT_TYPE")
 
 # JSON LOAD TO SEND TEST
-with open('dados.json', 'r', encoding='utf-8') as f:
-    json_load = json.load(f)
+# with open('dados.json', 'r', encoding='utf-8') as f:
+#     json_load = json.load(f)
+
+data_load = teste
 
 # CONVERT VARIABLE TO JSON DUMP 
-send_json = json.dumps(json_load)
+send_json = json.dumps(data_load)
 
 
 # GEN TOKEN TO ACCESS FUNCTION 
@@ -47,12 +50,12 @@ def create_process():
     headers_process = {'Content-Type':'application/json', 'accept':'*/*', "authorization":f'bearer {token}'}
 
     #SEND DATA TO CREATE PROCESS
-    response_teste = req.post(f'{URL_API}/api/instance/start', data=send_json, headers=headers_process )
+    response = req.post(f'{URL_API}/api/instance/start', data=send_json, headers=headers_process )
 
     #PRINT RESULT
     process = {
-        'body': response_teste.json(), 
-        'status code': response_teste.status_code
+        'body': response.json(), 
+        'status code': response.status_code
     }
     print('retorno: ', process)
     return process
